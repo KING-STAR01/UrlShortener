@@ -40,6 +40,10 @@
 #short_url {
   padding: 5px;
   border-radius: 10px;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 10px 45px;
+  text-align: center;
 }
 .url input {
   font-family: "Roboto", sans-serif;
@@ -109,4 +113,26 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+
+ul {
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 2px;
+  border-radius: 30px;
+}
+
+li {
+  word-wrap: break-word;
+  text-align: left;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#long_url_id {
+  font-weight: 400;
+}
+
+#short_url_id {
+  font-weight: bolder;
 }

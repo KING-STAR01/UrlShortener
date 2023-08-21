@@ -63,6 +63,8 @@ def get_all_urls(request):
 def go_to_url(request, short_url):
     try:
         url = get_object_or_404(UrlDetail, short_url=short_url)
+        url.click_count += 1
+        url.save()
     except Http404:
         return HttpResponse("invalid url")
     return HttpResponseRedirect(url.long_url)
